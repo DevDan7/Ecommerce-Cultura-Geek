@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>E-commerce Geek - Cadastro de Produtos</title>
+  <script src="style.js" defer></script>
+
+</head>
+<body>
+  <h1>Cadastro de Produtos - Cultura Geek</h1>
+  <form id="produto-form">
+    <label for="nome">Nome do Produto:</label>
+    <input type="text" id="nome" placeholder="Ex.: Action Figure, HQ, etc." required>
+
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" placeholder="Ex.: 49.90" step="0.01" required>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" rows="4" placeholder="Ex.: Produto novo, em perfeito estado." required></textarea>
+
+    <button type="submit">Cadastrar Produto</button>
+  </form>
+
+  <p class="feedback" id="feedback">feedback</p>
+
+  <div class="produtos-cadastrados" id="produtos-cadastrados">
+    <h2>Produtos Cadastrados:</h2>
+    <!-- Os produtos cadastrados aparecerão aqui -->
+  </div>
+
+</body>
+</html>
